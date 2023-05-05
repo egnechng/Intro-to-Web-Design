@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>svglogo</title>
+	<style type="text/css">
+		
+		text{
+			font-size: 40px;
+		}
+
+		circle{
+			fill:lightskyblue;
+			stroke:red;
+			stroke-width:1;
+		}
+		rect{
+			fill: blue;
+			stroke: red;
+			stroke-width:1
+		}
+		polygon{
+			fill:lightpink;
+			stroke:red;
+			stroke-width:1
+		}
+
+		rect, polygon{
+			opacity: 0.5;
+		}
+
+		rect:hover{
+			opacity: 1
+		}
+		rect:active{
+			opacity: 0.5;
+			fill: grey;
+		}
+		polygon:hover{
+			opacity: 1;
+		}
+		polygon:active{
+			opacity: 1;
+			fill: red;
+		}
+
+		circle:hover{
+			fill: royalblue;
+		}
+		circle:active{
+			fill: orange;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+
+<svg title = "logo" version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+ <a href = "https://www.nyu.edu/">"<rect x = "0" y = "0" rx = "25" ry = "25" width="200" height="170"/> </a>
+
+<polygon class = "triangle" points="100,0 15,155 185,155" />
+ 
+
+ <a href ="https://www.google.com/"> <circle cx="100" cy="100" r="60" /> </a>
+
+
+<text x="70" y="110" fill="black" font-family="Georgia">EC</text>
+
+</body>
+</html>
