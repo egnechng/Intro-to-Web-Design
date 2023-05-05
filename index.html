@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eugene Chang</title>
+
+    <style>
+
+      body{
+        background-color: pink;
+      }
+      h1{
+        font-size: 40px;
+        font-family: Verdana;
+      }
+      p{
+        font-family: Verdana;
+      }
+      ul{
+        font-family: Arial;
+      }
+      text{
+      font-size: 40px;
+    }
+
+    circle{
+      fill:lightskyblue;
+      stroke:red;
+      stroke-width:1;
+    }
+    rect{
+      fill: blue;
+      stroke: red;
+      stroke-width:1
+    }
+    polygon{
+      fill:lightpink;
+      stroke:red;
+      stroke-width:1
+    }
+
+    rect, polygon{
+      opacity: 0.5;
+    }
+
+    rect:hover{
+      opacity: 1
+    }
+    rect:active{
+      opacity: 0.5;
+      fill: grey;
+    }
+    polygon:hover{
+      opacity: 1;
+    }
+    polygon:active{
+      opacity: 1;
+      fill: red;
+    }
+
+    circle:hover{
+      fill: royalblue;
+    }
+    circle:active{
+      fill: orange;
+    }
+    .complete{
+      font-weight: bold
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction to Web Design</h1>
+
+    <svg title = "logo" version="1.1" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+    <a href = "https://www.nyu.edu/">"<rect x = "0" y = "0" rx = "25" ry = "25" width="200" height="170"/> </a>
+
+    <polygon class = "triangle" points="100,0 15,155 185,155" />
+ 
+
+    <a href ="https://www.google.com/"> <circle cx="100" cy="100" r="60" /> </a>
+
+
+<text x="70" y="110" fill="black" font-family="Georgia">EC</text>
+    <p style="font-style: italic;">Hello, my name is Eugene (Gene) Chang. I am a first-year NYU student from Connecticut, and I intend to major in Computer Science at CAS.</p>
+    <ul>
+      <li class = "complete"><a href="me/index.html">HTML</a></li>
+      <li class = "complete"><a href="css/index.html">CSS</a></li>
+      <li class = "complete"><a href="image/index.html">Raster Graphics</a></li>
+      <li class = "complete"><a href = "vector/index.html">Vector Graphics</a></li>
+      <li class = "complete"><a href = "website layout/index.html">Website Layout</a></li>
+      <li class = "complete"><a href = "responsive design/index.html">Responsive Design</a></li>
+      <li class = "complete"><a href = "javascript/index.html">JavaScript</a></li>
+      <li class = "complete"><a href = "Final Project/index.html">Final Project</a></li>
+    </ul>
+  </body>
+</html>
