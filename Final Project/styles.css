@@ -1,0 +1,218 @@
+
+@font-face{
+    font-family: montserrat;
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+h1{
+    font-family: montserrat;
+}
+
+body{
+    background-color: skyblue;
+}
+
+h1{
+    font-family: montserrat;  
+}
+
+div{
+    font-family: montserrat;   
+}
+
+p{
+    font-family: montserrat;  
+}
+
+.credit{
+    font-size: 12px;
+}
+
+a.link{
+    color: blue;
+    font-weight: bold;
+    padding:0px;
+}
+a.link:hover{
+    color: blue;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container{
+    font-family: monsterrat;
+    display: grid;
+    grid-template-areas:
+    'header header header menu'
+    'main main main main'
+    'footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.flex-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    flex: 50%;
+    margin: 30px;
+    padding: 15px;
+}
+
+.flex-item2{
+    background-color: white;
+    flex: 50%;
+    margin: 30px;
+    padding: 15px;
+}
+
+.flex-item3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 50%;
+    margin: 30px;
+    padding: 15px;
+  }
+
+.item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.menu-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+main{
+    font-family: montserrat; 
+    padding: 0px;
+    font-size: 24px;
+}
+
+header{
+    font-family: montserrat; 
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+nav{
+    font-family: montserrat; 
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+footer {
+    font-family: montserrat; 
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+a{
+    padding: 10px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+a:active {
+    color: red;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 1100px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .menu-flex{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .flex-item1, .flex-item2, .flex-item3{
+        padding: 5px;
+        margin: 5px;
+      }
+
+
+
+      img{
+        display: block;
+        width:  75%;
+        height: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    video{
+        display: block;
+        width:  75%;
+        height: 75%;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+      
+      h2, footer{
+          font-size: 97%;
+          padding: 3px;
+          margin: 3px;
+        }
+      
+        nav{
+          font-size: 95%;
+        }
+      
+        h3, h4, p, ul{
+          font-size: 90%;
+        }
+      
+        a{
+          padding: 5px;
+        }
+  }
